@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calmendarizS3t.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"/>
+            <Label Text="Sistema de calificaciones"
+                FontSize="36"
+                   HorizontalTextAlignment="Center"/>
+            
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña"/>
+            <Button x:Name="btnAbrir" Text="INGRESAR" Clicked="btnAbrir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

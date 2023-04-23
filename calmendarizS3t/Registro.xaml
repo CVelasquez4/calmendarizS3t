@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calmendarizS3t.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Sistema de Calificaciones" FontSize="26" HorizontalTextAlignment="Center"/>
+                <Label Text="Primer Parcial" FontSize="22" HorizontalTextAlignment="Center" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nota de Seguimiento 1" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaSeg1" Placeholder="Ingresa la nota" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Nota de Examen 1" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaEx1" Placeholder="Ingresa la nota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                    </Grid>
+                <Button x:Name="btnCalcular1" Text="Calcular" Clicked="btnCalcular1_Clicked"/>
+                <Label Text="Nota de Parcial 1" FontSize="18" HorizontalTextAlignment="Center" />
+                <Label x:Name="lblParcial1" FontSize="18"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nota de Seguimiento 2" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaSeg2" Placeholder="Ingresa la nota" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Nota de Examen 2" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaEx2" Placeholder="Ingresa la nota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>                    
+                </Grid>
+                <Button x:Name="btnCalcular2" Text="Calcular" Clicked="btnCalcular2_Clicked"/>
+                <Label Text="Nota de Parcial 2" FontSize="18" HorizontalTextAlignment="Center" />
+                <Label x:Name="lblParcial2" FontSize="18"/>
+                <Button x:Name="btnEstado" Text="Estado" Clicked="btnEstado_Clicked"/>
+                <Label x:Name="lblEstado" FontSize="18"/>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
