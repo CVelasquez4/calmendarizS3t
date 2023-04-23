@@ -5,6 +5,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                <Label Text="Usuario Conectado" FontSize="26" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lblUsuario" FontSize="20" HorizontalTextAlignment="Center"/>
                 <Label Text="Sistema de Calificaciones" FontSize="26" HorizontalTextAlignment="Center"/>
                 <Label Text="Primer Parcial" FontSize="22" HorizontalTextAlignment="Center" />
                 <Grid>

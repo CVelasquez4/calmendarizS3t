@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace calmendarizS3t
+namespace calmendarizS3t 
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro()
+        public Registro(string Usuario)
         {
             InitializeComponent();
+            lblUsuario.Text = Usuario;
         }
 
         

@@ -21,7 +21,17 @@ namespace calmendarizS3t
         {
             string Usuario = txtUsuario.Text;
             string Contraseña = txtContraseña.Text;
-            Navigation.PushAsync( new Registro());
+            if (Usuario == "estudiante2023" && Contraseña == "uisrael2023") 
+            {
+                Navigation.PushAsync(new Registro(Usuario));
+            }
+            else
+            {
+                txtUsuario.Text = "";
+                txtContraseña.Text = "";
+                DisplayAlert("Error", "Usuario y contraseña incorrectos", "Cerrar");
+            }
+            
         }
     }
 }

@@ -9,8 +9,8 @@
                 FontSize="36"
                    HorizontalTextAlignment="Center"/>
             
-                <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
-            <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña" IsPassword="True"/>
             <Button x:Name="btnAbrir" Text="INGRESAR" Clicked="btnAbrir_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
